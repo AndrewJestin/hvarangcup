@@ -31,6 +31,7 @@ public class warningblueminus implements ActionListener {
         if (wb == 2 || wb==5 || wb==8 || wb == 11|| wb==14 || wb==17||wb == 20 || wb==23 || wb==26){
             bglobal++;
             btotal.setText(String.valueOf(bglobal));
+            btotal1.setText(String.valueOf(bglobal));
     }
 
       //  System.out.println(wb);

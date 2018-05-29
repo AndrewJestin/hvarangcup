@@ -30,6 +30,7 @@ public class warningred implements ActionListener {
         if (wr % 3 == 0) {
             rglobal--;
             rtotal.setText(String.valueOf(rglobal));
+            rtotal1.setText(String.valueOf(rglobal));
     }
       //  System.out.println(wr);
         rwarnings.setText(String.valueOf(rwarning));

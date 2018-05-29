@@ -19,6 +19,7 @@ public class penaltyminusred implements ActionListener  {
         rpenal = rpen;
         rglobal++;
         rtotal.setText(String.valueOf(rglobal));
+        rtotal1.setText(String.valueOf(rglobal));
         rpenalty11.setText(String.valueOf(rpen));
         rpenalty.setText(String.valueOf(rpen));
 

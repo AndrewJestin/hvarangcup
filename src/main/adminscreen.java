@@ -26,9 +26,12 @@ import static main.mainscreen.*;
 
     public class adminscreen {
         public static int screen=1;
-        public static JTextField lblUmpire1 = new JTextField("Type Here!");
-        public static JTextField lblcategory1 = new JTextField("ADULT MALE -64kg.");
-        public static JLabel category = new JLabel("CATEGORY: ");
+        public static JTextField lblUmpire1 = new JTextField("Umpire 1");
+        public static JTextField lblUmpire2= new JTextField("Umpire 2");
+        public static JTextField lblUmpire3 = new JTextField("Umpire 3");
+        public static JTextField lblUmpire4 = new JTextField("Umpire 4");
+        public static JTextField lblcategory1 = new JTextField("Левый ближний");
+        public static JLabel category = new JLabel("TOTAL:");
         public static int brk = 0;
         public static int tmaxround = 1;  // количество раундов в  поединке
         public static int tmaxmin = 0;  // количество минут в раунде
@@ -205,41 +208,53 @@ import static main.mainscreen.*;
 
 
 //lbl category
-            category.setLocation(250, 20);
-            category.setSize(150, 50);
+            category.setLocation(50, 75);
+            category.setSize(170, 50);
             category.setHorizontalAlignment(0);
             category.setForeground(Color.black);
-            category.setFont(new Font("Arial", Font.BOLD, 20));
+            category.setFont(new Font("Arial", Font.BOLD, 40));
             // lblcategory.setBorder(BorderFactory.createLineBorder(Color.black));
             category.setOpaque(true);
 
             totalGUI.add(category);
 
 
-            lblcategory1.setLocation(400, 20);
-            lblcategory1.setSize(450, 50);
-            lblcategory1.setHorizontalAlignment(0);
-            lblcategory1.setForeground(Color.black);
-            lblcategory1.setFont(new Font("Arial", Font.BOLD, 25));
+            lblUmpire1.setLocation(500, 600);
+            lblUmpire1.setSize(145, 30);
+            lblUmpire1.setHorizontalAlignment(0);
+            lblUmpire1.setForeground(Color.black);
+            lblUmpire1.setFont(new Font("Arial", Font.BOLD, 15));
             // lblcategory.setBorder(BorderFactory.createLineBorder(Color.black));
-            lblcategory1.setOpaque(true);
-            lblcategory1.getDocument().addDocumentListener(new DocumentListener() {
-                public void removeUpdate(DocumentEvent e) {
-                    System.out.println("removeUpdate");
-                    lblcategory.setText("Sparring");
-                }
+            lblUmpire1.setOpaque(true);
+            totalGUI.add(lblUmpire1);
 
-                public void insertUpdate(DocumentEvent e) {
-                    System.out.println("insertUpdate");
-                    lblcategory.setText(lblcategory1.getText());
-                }
+            lblUmpire2.setLocation(650, 600);
+            lblUmpire2.setSize(145, 30);
+            lblUmpire2.setHorizontalAlignment(0);
+            lblUmpire2.setForeground(Color.black);
+            lblUmpire2.setFont(new Font("Arial", Font.BOLD, 15));
+            // lblcategory.setBorder(BorderFactory.createLineBorder(Color.black));
+            lblUmpire2.setOpaque(true);
+            totalGUI.add(lblUmpire2);
 
-                public void changedUpdate(DocumentEvent e) {
-                    System.out.println("changedUpdate");
-                    lblcategory.setText(lblcategory1.getText());
-                }
-            });
-            totalGUI.add(lblcategory1);
+            lblUmpire3.setLocation(800, 600);
+            lblUmpire3.setSize(145, 30);
+            lblUmpire3.setHorizontalAlignment(0);
+            lblUmpire3.setForeground(Color.black);
+            lblUmpire3.setFont(new Font("Arial", Font.BOLD, 15));
+            // lblcategory.setBorder(BorderFactory.createLineBorder(Color.black));
+            lblUmpire3.setOpaque(true);
+            totalGUI.add(lblUmpire3);
+
+            lblUmpire4.setLocation(950, 600);
+            lblUmpire4.setSize(145, 30);
+            lblUmpire4.setHorizontalAlignment(0);
+            lblUmpire4.setForeground(Color.black);
+            lblUmpire4.setFont(new Font("Arial", Font.BOLD, 15));
+            lblUmpire4.setOpaque(true);
+            totalGUI.add(lblUmpire4);
+
+
 
             // кнопка прибавления секунд
 
@@ -492,7 +507,7 @@ import static main.mainscreen.*;
 //// штраф красный
 
             JButton penaltyplusred = new JButton("+");
-            penaltyplusred.setLocation(250, 290);
+            penaltyplusred.setLocation(150, 290);
             penaltyplusred.setSize(50, 60);
             penaltyplusred.setBackground(Color.yellow);
             penaltyplusred.setForeground(Color.black);
@@ -502,7 +517,7 @@ import static main.mainscreen.*;
             totalGUI.add(penaltyplusred);
 
             JButton penaltyredminus = new JButton("-");
-            penaltyredminus.setLocation(300, 290);
+            penaltyredminus.setLocation(200, 290);
             penaltyredminus.setSize(50, 60);
             penaltyredminus.setBackground(Color.yellow);
             penaltyredminus.setForeground(Color.black);
@@ -512,7 +527,7 @@ import static main.mainscreen.*;
             totalGUI.add(penaltyredminus);
             //предупреждения
 
-            rwarnings1.setLocation(250, 350);
+            rwarnings1.setLocation(150, 350);
             rwarnings1.setSize(100, 150);
             rwarnings1.setHorizontalAlignment(0);
             rwarnings1.setForeground(Color.black);
@@ -531,7 +546,7 @@ import static main.mainscreen.*;
             totalGUI.add(bwarnings1);
 
             // штрафные очки
-            rpenalty11.setLocation(250, 200);
+            rpenalty11.setLocation(150, 200);
             rpenalty11.setSize(100, 90);
             rpenalty11.setHorizontalAlignment(0);
             rpenalty11.setForeground(Color.black);
@@ -554,8 +569,8 @@ import static main.mainscreen.*;
             totalGUI.add(bpenalty11);
 
             // общие очки
-            btotal1.setLocation(550, 200);
-            btotal1.setSize(200, 300);
+            btotal1.setLocation(500, 200);
+            btotal1.setSize(250, 300);
             btotal1.setHorizontalAlignment(0);
             btotal1.setForeground(Color.white);
             btotal1.setBackground(Color.blue);
@@ -564,8 +579,8 @@ import static main.mainscreen.*;
             btotal1.setOpaque(true);
 
             totalGUI.add(btotal1);
-            rtotal1.setLocation(350, 200);
-            rtotal1.setSize(200, 300);
+            rtotal1.setLocation(250, 200);
+            rtotal1.setSize(250, 300);
             rtotal1.setHorizontalAlignment(0);
             rtotal1.setForeground(Color.white);
             rtotal1.setBackground(Color.red);
@@ -622,7 +637,7 @@ import static main.mainscreen.*;
 // замечания красный
 
             JButton warningplusred = new JButton("+");
-            warningplusred.setLocation(250, 440);
+            warningplusred.setLocation(150, 440);
             warningplusred.setSize(50, 60);
             warningplusred.setBackground(Color.red);
             warningplusred.setForeground(Color.white);
@@ -633,7 +648,7 @@ import static main.mainscreen.*;
 
 
             JButton warningminusred = new JButton("-");
-            warningminusred.setLocation(300, 440);
+            warningminusred.setLocation(200, 440);
             warningminusred.setSize(50, 60);
             warningminusred.setBackground(Color.red);
             warningminusred.setForeground(Color.white);
@@ -791,7 +806,7 @@ import static main.mainscreen.*;
 
             totalGUI.add(bs44);
 
-            rs11t.setLocation(500, 505);
+            rs11t.setLocation(250, 50);
             rs11t.setSize(150, 50);
             rs11t.setHorizontalAlignment(0);
             rs11t.setForeground(Color.white);
@@ -802,7 +817,7 @@ import static main.mainscreen.*;
 
             totalGUI.add(rs11t);
 
-            bs11t.setLocation(500, 560);
+            bs11t.setLocation(250, 105);
             bs11t.setSize(150, 50);
             bs11t.setHorizontalAlignment(0);
             bs11t.setForeground(Color.white);
@@ -814,7 +829,7 @@ import static main.mainscreen.*;
 
             //  судья 2
 
-            rs22t.setLocation(650, 505);
+            rs22t.setLocation(400, 50);
             rs22t.setSize(150, 50);
             rs22t.setHorizontalAlignment(0);
             rs22t.setForeground(Color.white);
@@ -823,7 +838,7 @@ import static main.mainscreen.*;
             rs22t.setOpaque(true);
             totalGUI.add(rs22t);
 
-            bs22t.setLocation(650, 560);
+            bs22t.setLocation(400, 105);
             bs22t.setSize(150, 50);
             bs22t.setHorizontalAlignment(0);
             bs22t.setForeground(Color.white);
@@ -834,7 +849,7 @@ import static main.mainscreen.*;
 
 
             //судья 3
-            rs33t.setLocation(800, 505);
+            rs33t.setLocation(550, 50);
             rs33t.setSize(150, 50);
             rs33t.setHorizontalAlignment(0);
             rs33t.setForeground(Color.white);
@@ -843,7 +858,7 @@ import static main.mainscreen.*;
             rs33t.setOpaque(true);
             totalGUI.add(rs33t);
 
-            bs33t.setLocation(800, 560);
+            bs33t.setLocation(550, 105);
             bs33t.setSize(150, 50);
             bs33t.setHorizontalAlignment(0);
             bs33t.setForeground(Color.white);
@@ -853,7 +868,7 @@ import static main.mainscreen.*;
             totalGUI.add(bs33t);
             // судья 4
 
-            rs44t.setLocation(950, 505);
+            rs44t.setLocation(700, 50);
             rs44t.setSize(150, 50);
             rs44t.setHorizontalAlignment(0);
             rs44t.setForeground(Color.white);
@@ -862,7 +877,7 @@ import static main.mainscreen.*;
             rs44t.setOpaque(true);
             totalGUI.add(rs44t);
 
-            bs44t.setLocation(950, 560);
+            bs44t.setLocation(700, 105);
             bs44t.setSize(150, 50);
             bs44t.setHorizontalAlignment(0);
             bs44t.setForeground(Color.white);

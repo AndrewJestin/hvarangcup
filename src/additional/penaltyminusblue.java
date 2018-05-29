@@ -21,6 +21,7 @@ public class penaltyminusblue implements ActionListener  {
 
         bglobal++;
         btotal.setText(String.valueOf(bglobal));
+        btotal1.setText(String.valueOf(bglobal));
         bpenalty11.setText(String.valueOf(bpen));
         bpenalty.setText(String.valueOf(bpen));
         String[] str9 = new String[5];

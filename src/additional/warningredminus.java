@@ -30,6 +30,7 @@ public class warningredminus implements ActionListener {
         if (wr == 2 || wr==5 || wr==8 || wr == 11|| wr==14 || wr==17||wr == 20 || wr==23 || wr==26){
             rglobal++;
             rtotal.setText(String.valueOf(rglobal));
+            rtotal1.setText(String.valueOf(rglobal));
         }
 
       //  System.out.println(wr);

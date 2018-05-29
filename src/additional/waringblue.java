@@ -31,6 +31,7 @@ public class waringblue implements ActionListener {
         if (wb % 3 == 0){
             bglobal--;
             btotal.setText(String.valueOf(bglobal));
+            btotal1.setText(String.valueOf(bglobal));
             System.out.println(bglobal);
          //   System.out.println(ab);
 

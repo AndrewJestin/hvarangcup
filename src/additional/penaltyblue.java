@@ -20,6 +20,7 @@ public class penaltyblue implements ActionListener {
 
         bglobal--;
         btotal.setText(String.valueOf(bglobal));
+        btotal1.setText(String.valueOf(bglobal));
         System.out.println(round.getText() + ". Время - " + min + ":" + count + " Камджон синему (-1 балл)");
 
 //        if (bpenal ==1){
