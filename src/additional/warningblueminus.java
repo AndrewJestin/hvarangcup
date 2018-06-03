@@ -29,9 +29,29 @@ public class warningblueminus implements ActionListener {
             bwarnings1.setText(String.valueOf(bwarning));
         }
         if (wb == 2 || wb==5 || wb==8 || wb == 11|| wb==14 || wb==17||wb == 20 || wb==23 || wb==26){
-            bglobal++;
-            btotal.setText(String.valueOf(bglobal));
-            btotal1.setText(String.valueOf(bglobal));
+            amountb++;
+            amountbt++;
+            amountb2++;
+            amountb2t++;
+            amountb3++;
+            amountb3t++;
+            amountb4++;
+            amountb4t++;
+
+            ab=amountb;
+            ab2=amountb2t;
+            ab3=amountb3t;
+            ab4=amountb4t;
+            bs11.setText(String.valueOf(amountb));
+            bs11t.setText(String.valueOf(amountb));
+            bs22.setText(String.valueOf(amountb2));
+            bs22t.setText(String.valueOf(amountb2t));
+            bs33.setText(String.valueOf(amountb3));
+            bs33t.setText(String.valueOf(amountb3t));
+            bs44.setText(String.valueOf(amountb4));
+            bs44t.setText(String.valueOf(amountb4t));
+            labelcolor a = new labelcolor();
+            a.colorL(ab,ab2,ab3,ab4);
     }
 
       //  System.out.println(wb);

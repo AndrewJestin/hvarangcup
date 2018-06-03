@@ -17,9 +17,33 @@ public class penaltyred implements ActionListener {
 
         rpen++;
         rpenal = rpen;
-        rglobal--;
-        rtotal.setText(String.valueOf(rglobal));
-        rtotal1.setText(String.valueOf(rglobal));
+        amount--;
+        amountt--;
+        amount2--;
+        amount2t--;
+        amount3--;
+        amount3t--;
+        amount4--;
+        amount4t--;
+
+        ar=amountt;
+        ar2=amount2t;
+        ar3=amount3t;
+        ar4=amount4t;
+        rs11.setText(String.valueOf(amount));
+        rs11t.setText(String.valueOf(amountt));
+        rs22.setText(String.valueOf(amount2));
+        rs22t.setText(String.valueOf(amount2t));
+        rs33.setText(String.valueOf(amount3));
+        rs33t.setText(String.valueOf(amount3t));
+        rs44.setText(String.valueOf(amount4));
+        rs44t.setText(String.valueOf(amount4t));
+        labelcolor2 a = new labelcolor2();
+        a.colorL(ar,ar2,ar3,ar4);
+        //rglobal--;
+
+       // rtotal.setText(String.valueOf(rglobal));
+       // rtotal1.setText(String.valueOf(rglobal));
 
       //  System.out.println(rpenal);
         rpenalty11.setText(String.valueOf(rpen));

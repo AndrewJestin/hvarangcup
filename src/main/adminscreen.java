@@ -30,7 +30,6 @@ import static main.mainscreen.*;
         public static JTextField lblUmpire2= new JTextField("Umpire 2");
         public static JTextField lblUmpire3 = new JTextField("Umpire 3");
         public static JTextField lblUmpire4 = new JTextField("Umpire 4");
-        public static JTextField lblcategory1 = new JTextField("Левый ближний");
         public static JLabel category = new JLabel("TOTAL:");
         public static int brk = 0;
         public static int tmaxround = 1;  // количество раундов в  поединке
@@ -79,6 +78,8 @@ import static main.mainscreen.*;
         public static int br;
         public static int rwarning = 0;
         public static int bwarning = 0;
+        public static int raddpoint = 0;
+        public static int baddpoint = 0;
         public static int wr;
         public static int wb;
         public static JLabel rwarnings1 = new JLabel("0");
@@ -92,7 +93,6 @@ import static main.mainscreen.*;
         public static int rpenal;
         public static int bpenal;
         public static JTextField rcompetitor1 = new JTextField("Red");
-
         public static JTextField bcompetitor1 = new JTextField("Blue");
         public static JLabel rs11 = new JLabel("0");
         public static JLabel bs11 = new JLabel("0");
@@ -133,19 +133,11 @@ import static main.mainscreen.*;
         public static JButton ekran1 = new JButton("1920*1080");
         public static JCheckBox bbelts = new JCheckBox();
         public static JButton btnWatch = new JButton("START");
-        public static JLabel lblkicks = new JLabel("Compulsory techniques ");
-        public static JLabel lblrnd1 = new JLabel("1Round ");
-        public static JLabel lblrnd2 = new JLabel("2Round ");
-        public static JCheckBox rnd1red = new JCheckBox();
-        public static JCheckBox rnd2red = new JCheckBox();
-        public static JCheckBox rnd1blue = new JCheckBox();
-        public static JCheckBox rnd2blue = new JCheckBox();
-        public static JButton theme = new JButton("Black");
+          public static JButton theme = new JButton("Black");
         public static int rowarray = 0;
         public static int matchno1 = 1;
         public static JButton btnplusmatch = new JButton("+");
         public static JButton btnminusmatch = new JButton("-");
-
         public static JLabel lblMatchNo1 = new JLabel(matchno1 + "");
 
 
