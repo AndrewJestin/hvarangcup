@@ -42,7 +42,7 @@ public class baddpoints implements ActionListener {
         bs33t.setText(String.valueOf(amountb3t));
         bs44.setText(String.valueOf(amountb4));
         bs44t.setText(String.valueOf(amountb4t));
-        labelcolor2 a = new labelcolor2();
+        labelcolor a = new labelcolor();
         a.colorL(ab,ab2,ab3,ab4);
         bs5.setText(String.valueOf(baddpoint));
         //rpenalty.setText(String.valueOf(rpen));
