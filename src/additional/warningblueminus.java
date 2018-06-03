@@ -60,7 +60,7 @@ public class warningblueminus implements ActionListener {
 
         String[] str4 = new String[5];
         str4[0] = "Referee";
-        str4[1] = round.getText();
+        str4[1] = roundt.getText();
         str4[2] = lbltimer.getText();
         str4[3] = " Warning Blue, Removed";
         str4[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();

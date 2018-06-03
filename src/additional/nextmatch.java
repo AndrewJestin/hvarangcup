@@ -81,24 +81,7 @@ public class nextmatch implements ActionListener {
 
         round1.setText("1");
         round.setText("ROUND : 1");
-        rnd1red.setEnabled(true);
-        rnd2red.setEnabled(true);
-        rnd1blue.setEnabled(true);
-        rnd2blue.setEnabled(true);
-        rnd1red.setSelected(false);
-        rnd2red.setSelected(false);
-        rnd1blue.setSelected(false);
-        rnd2blue.setSelected(false);
 
-        if (bbelts.isSelected()) {
-            lblrnd2.setVisible(true);
-            rnd2red.setVisible(true);
-            rnd2blue.setVisible(true);}
-        else {
-            lblrnd2.setVisible(false);
-            rnd2red.setVisible(false);
-            rnd2blue.setVisible(false);
-        }
 
 
         matchno1++;

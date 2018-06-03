@@ -47,7 +47,7 @@ public class penaltyblue implements ActionListener {
 
     String[] str8 = new String[5];
     str8[0] = "Referee";
-    str8[1] = round.getText();
+    str8[1] = roundt.getText();
     str8[2] = lbltimer.getText();
     str8[3] = " Penalty(-1 point) Blue";
     str8[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();

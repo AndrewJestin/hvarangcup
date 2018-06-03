@@ -92,6 +92,10 @@ public class resetscore implements ActionListener {
         matchno1 =1;
         lblMatchNo1.setText(matchno1+"");
         roundt.setText("FIGHT : "+String.valueOf(matchno1));
+        raddpoint=0;
+        rs5.setText(raddpoint+"");
+        baddpoint=0;
+        bs5.setText(baddpoint+"");
      }
 
 }

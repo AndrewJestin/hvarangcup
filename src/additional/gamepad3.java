@@ -33,8 +33,8 @@ public class gamepad3 {
                 labelcolor2 a = new labelcolor2();
                 a.colorL(ar,ar2,ar3,ar4);
                 String[]str15 =new String[5];
-              //  str15[0] = boxUmpire32.getText();
-                str15[1] = round.getText();
+                str15[0] = lblUmpire3.getText();
+                str15[1] = roundt.getText();
                 str15[2] = lbltimer.getText();
                 str15[3] = "1 point Red";
                 str15[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();
@@ -56,8 +56,8 @@ public class gamepad3 {
                 labelcolor a = new labelcolor();
                 a.colorL(ab,ab2,ab3,ab4);
                 String[]str12 =new String[5];
-               // str12[0] = boxUmpire32.getText();
-                str12[1] = round.getText();
+                str12[0] = lblUmpire3.getText();
+                str12[1] = roundt.getText();
                 str12[2] = lbltimer.getText();
                 str12[3] = "1 point Blue";
                 str12[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();
@@ -80,8 +80,8 @@ public class gamepad3 {
                 labelcolor2 a = new labelcolor2();
                 a.colorL(ar,ar2,ar3,ar4);
                 String[]str20 =new String[5];
-               // str20[0] = boxUmpire32.getText();
-                str20[1] = round.getText();
+                str20[0] = lblUmpire3.getText();
+                str20[1] = roundt.getText();
                 str20[2] = lbltimer.getText();
                 str20[3] = "1 point Red,Removed";
                 str20[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();
@@ -101,8 +101,8 @@ public class gamepad3 {
                 labelcolor a = new labelcolor();
                 a.colorL(ab,ab2,ab3,ab4);
                 String[]str19 =new String[5];
-               // str19[0] = boxUmpire32.getText();
-                str19[1] = round.getText();
+                str19[0] = lblUmpire3.getText();
+                str19[1] = roundt.getText();
                 str19[2] = lbltimer.getText();
                 str19[3] = "1 point Blue,Removed";
                 str19[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();

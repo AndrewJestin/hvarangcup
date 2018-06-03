@@ -78,16 +78,14 @@ import static main.mainscreen.*;
         public static int br;
         public static int rwarning = 0;
         public static int bwarning = 0;
-        public static int raddpoint = 0;
-        public static int baddpoint = 0;
         public static int wr;
         public static int wb;
         public static JLabel rwarnings1 = new JLabel("0");
         public static JLabel bwarnings1 = new JLabel("0");
         public static JLabel btotal1 = new JLabel("0");
         public static JLabel rtotal1 = new JLabel("0");
-        public static JLabel rpenalty11 = new JLabel("");
-        public static JLabel bpenalty11 = new JLabel("");
+        public static JLabel rpenalty11 = new JLabel("0");
+        public static JLabel bpenalty11 = new JLabel("0");
         public static int rpen = 0;
         public static int bpen = 0;
         public static int rpenal;
@@ -110,11 +108,16 @@ import static main.mainscreen.*;
         public static JLabel bs33t = new JLabel("0");
         public static JLabel rs44t = new JLabel("0");
         public static JLabel bs44t = new JLabel("0");
+        public static JLabel bs5 = new JLabel("0");
+        public static JLabel rs5 = new JLabel("0");
+        public static int raddpoint = 0;
+        public static int baddpoint = 0;
+
         public static JLabel lbltimer = new JLabel("00:00");
-        public static JLabel roundstop = new JLabel("Rounds");
+       // public static JLabel roundstop = new JLabel("Rounds");
         public static JLabel minutestop = new JLabel("Minutes");
         public static JLabel secondsstop = new JLabel("Seconds");
-        public static JLabel breeaktop = new JLabel("Break");
+       // public static JLabel breeaktop = new JLabel("Break");
         public static JLabel timmaxround = new JLabel(tmaxround + "");
         public static JLabel timmaxmin = new JLabel("");
         public static JLabel timmaxsec = new JLabel("");
@@ -276,7 +279,7 @@ import static main.mainscreen.*;
             btnplusmaxrnd.setFont(new Font("Arial", Font.BOLD, 25));
             btnplusmaxrnd.setBorder(BorderFactory.createLineBorder(Color.black));
             btnplusmaxrnd.addActionListener(new maxrnd());
-            btnplusmaxrnd.setVisible(true);
+            btnplusmaxrnd.setVisible(false);
             totalGUI.add(btnplusmaxrnd);
 
 //  кнопка вычитания раундов
@@ -286,7 +289,7 @@ import static main.mainscreen.*;
             btnminusmaxrnd.setFont(new Font("Arial", Font.BOLD, 25));
             btnminusmaxrnd.setBorder(BorderFactory.createLineBorder(Color.black));
             btnminusmaxrnd.addActionListener(new maxrnd());
-            btnminusmaxrnd.setVisible(true);
+            btnminusmaxrnd.setVisible(false);
             totalGUI.add(btnminusmaxrnd);
 
 // кнопка прибавления минут
@@ -316,7 +319,7 @@ import static main.mainscreen.*;
             btnplusbrk.setFont(new Font("Arial", Font.BOLD, 25));
             btnplusbrk.setBorder(BorderFactory.createLineBorder(Color.black));
             btnplusbrk.addActionListener(new maxbrk());
-            btnplusbrk.setVisible(true);
+            btnplusbrk.setVisible(false);
             totalGUI.add(btnplusbrk);
 
 //  кнопка вычитания перерыва
@@ -326,7 +329,7 @@ import static main.mainscreen.*;
             btnminusbrk.setFont(new Font("Arial", Font.BOLD, 25));
             btnminusbrk.setBorder(BorderFactory.createLineBorder(Color.black));
             btnminusbrk.addActionListener(new maxbrk());
-            btnminusbrk.setVisible(true);
+            btnminusbrk.setVisible(false);
             totalGUI.add(btnminusbrk);
 
 //  кол-во раундов в таймере
@@ -337,6 +340,7 @@ import static main.mainscreen.*;
             timmaxround.setBorder(BorderFactory.createLineBorder(Color.black));
             timmaxround.setForeground(Color.black);
             timmaxround.setFont(new Font("Arial", Font.BOLD, 25));
+            timmaxround.setVisible(false);
             totalGUI.add(timmaxround);
 
 //  кол-во минут в таймере
@@ -366,6 +370,7 @@ import static main.mainscreen.*;
             timbreaktime.setBorder(BorderFactory.createLineBorder(Color.black));
             timbreaktime.setForeground(Color.black);
             timbreaktime.setFont(new Font("Arial", Font.BOLD, 25));
+            timbreaktime.setVisible(false);
             totalGUI.add(timbreaktime);
 
 // номер раунда
@@ -377,11 +382,12 @@ import static main.mainscreen.*;
             round1.setBorder(BorderFactory.createLineBorder(Color.black));
             round1.setForeground(Color.black);
             round1.setFont(new Font("Arial", Font.BOLD, 45));
+            round1.setVisible(false);
             totalGUI.add(round1);
 
 //      таймер
 
-            lbltimer.setLocation(980, 20);
+            lbltimer.setLocation(960, 20);
             lbltimer.setSize(220, 70);
             lbltimer.setHorizontalAlignment(0);
             lbltimer.setForeground(Color.black);
@@ -392,15 +398,15 @@ import static main.mainscreen.*;
             totalGUI.add(lbltimer);
 
             // табличка rounds
-
-            roundstop.setLocation(870, 150);
-            roundstop.setSize(100, 40);
-            roundstop.setHorizontalAlignment(0);
-            roundstop.setForeground(Color.black);
-            roundstop.setVerticalAlignment(0);
-            roundstop.setFont(new Font("Arial", Font.BOLD, 20));
-            roundstop.setOpaque(true);
-            totalGUI.add(roundstop);
+//
+//            roundstop.setLocation(870, 150);
+//            roundstop.setSize(100, 40);
+//            roundstop.setHorizontalAlignment(0);
+//            roundstop.setForeground(Color.black);
+//            roundstop.setVerticalAlignment(0);
+//            roundstop.setFont(new Font("Arial", Font.BOLD, 20));
+//            roundstop.setOpaque(true);
+//            totalGUI.add(roundstop);
             // табличка minutes
 
             minutestop.setLocation(970, 150);
@@ -421,14 +427,14 @@ import static main.mainscreen.*;
             secondsstop.setOpaque(true);
             totalGUI.add(secondsstop);
             // табличка Break
-            breeaktop.setLocation(1170, 150);
-            breeaktop.setSize(100, 40);
-            breeaktop.setHorizontalAlignment(0);
-            breeaktop.setForeground(Color.black);
-            breeaktop.setVerticalAlignment(0);
-            breeaktop.setFont(new Font("Arial", Font.BOLD, 20));
-            breeaktop.setOpaque(true);
-            totalGUI.add(breeaktop);
+//            breeaktop.setLocation(1170, 150);
+//            breeaktop.setSize(100, 40);
+//            breeaktop.setHorizontalAlignment(0);
+//            breeaktop.setForeground(Color.black);
+//            breeaktop.setVerticalAlignment(0);
+//            breeaktop.setFont(new Font("Arial", Font.BOLD, 20));
+//            breeaktop.setOpaque(true);
+//            totalGUI.add(breeaktop);
 
 //  сброс
             JButton btnReset = new JButton("RESET");
@@ -798,6 +804,75 @@ import static main.mainscreen.*;
 
             totalGUI.add(bs44);
 
+            rs5.setLocation(350, 501);
+            rs5.setSize(50, 50);
+            rs5.setHorizontalAlignment(0);
+            rs5.setForeground(Color.white);
+            rs5.setBackground(Color.red);
+            rs5.setFont(new Font("Arial", Font.BOLD, 45));
+            rs5.setOpaque(true);
+
+
+            totalGUI.add(rs5);
+
+            bs5.setLocation(600, 501);
+            bs5.setSize(50, 50);
+            bs5.setHorizontalAlignment(0);
+            bs5.setForeground(Color.white);
+            bs5.setBackground(Color.blue);
+            bs5.setFont(new Font("Arial", Font.BOLD, 40));
+            bs5.setOpaque(true);
+
+            totalGUI.add(bs5);
+
+            JButton lblraddpointplus = new JButton("+");
+            lblraddpointplus.setLocation(250, 501);
+            lblraddpointplus.setSize(100, 50);
+            lblraddpointplus.setHorizontalAlignment(0);
+            lblraddpointplus.setForeground(Color.white);
+           // lblraddpointplus.setVerticalAlignment(SwingConstants.BOTTOM);
+            lblraddpointplus.addActionListener(new raddpoints());
+            lblraddpointplus.setFont(new Font("Arial", Font.BOLD, 45));
+            lblraddpointplus.setBackground(Color.red);
+            lblraddpointplus.setOpaque(true);
+            totalGUI.add(lblraddpointplus);
+
+            JButton lblraddpointminus = new JButton("-");
+            lblraddpointminus.setLocation(400, 501);
+            lblraddpointminus.setSize(100, 50);
+            lblraddpointminus.setHorizontalAlignment(0);
+            lblraddpointminus.setForeground(Color.white);
+            //lblraddpointminus.setVerticalAlignment(SwingConstants.BOTTOM);
+            lblraddpointminus.setFont(new Font("Arial", Font.BOLD, 45));
+            lblraddpointminus.addActionListener(new rremovepoints());
+            lblraddpointminus.setBackground(Color.red);
+            lblraddpointminus.setOpaque(true);
+            totalGUI.add(lblraddpointminus);
+
+            JButton lblbaddpointplus = new JButton("+");
+            lblbaddpointplus.setLocation(500, 501);
+            lblbaddpointplus.setSize(100, 50);
+            lblbaddpointplus.setHorizontalAlignment(0);
+            lblbaddpointplus.setForeground(Color.white);
+            // lblraddpointplus.setVerticalAlignment(SwingConstants.BOTTOM);
+            lblbaddpointplus.addActionListener(new baddpoints());
+            lblbaddpointplus.setFont(new Font("Arial", Font.BOLD, 45));
+            lblbaddpointplus.setBackground(Color.blue);
+            lblbaddpointplus.setOpaque(true);
+            totalGUI.add(lblbaddpointplus);
+
+            JButton lblbaddpointminus = new JButton("-");
+            lblbaddpointminus.setLocation(650, 501);
+            lblbaddpointminus.setSize(100, 50);
+            lblbaddpointminus.setHorizontalAlignment(0);
+            lblbaddpointminus.setForeground(Color.white);
+            //lblraddpointminus.setVerticalAlignment(SwingConstants.BOTTOM);
+            lblbaddpointminus.setFont(new Font("Arial", Font.BOLD, 45));
+            lblbaddpointminus.addActionListener(new bremovepoints());
+            lblbaddpointminus.setBackground(Color.blue);
+            lblbaddpointminus.setOpaque(true);
+            totalGUI.add(lblbaddpointminus);
+
             rs11t.setLocation(250, 50);
             rs11t.setSize(150, 50);
             rs11t.setHorizontalAlignment(0);
@@ -903,9 +978,9 @@ import static main.mainscreen.*;
 
                     String[] str10 = new String[5];
                     str10[0] = "Jury President";
-                    str10[1] = round.getText();
+                    str10[1] = roundt.getText();
                     str10[2] = lbltimer.getText();
-                    str10[3] = "Match No "+ matchno1 +" Starts!";
+                    str10[3] = "New Team Sparring begins!";
                     str10[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();
                     btm.addDate(str10);
                     btm.fireTableDataChanged();

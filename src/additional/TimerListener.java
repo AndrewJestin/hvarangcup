@@ -148,21 +148,6 @@ public class TimerListener implements ActionListener {
 
 
         }
-        if (rndnum == 1 && bbelts.isSelected()) {
 
-            lblrnd2.setVisible(false);
-            // rnd2red.setEnabled(false);
-            //  rnd2blue.setEnabled(false);
-            rnd2red.setVisible(false);
-            rnd2blue.setVisible(false);
-
-        }
-        else if (rndnum==2 && bbelts.isSelected()){
-            rnd1red.setEnabled(false);
-            rnd1blue.setEnabled(false);
-            rnd2red.setVisible(true);
-            rnd2blue.setVisible(true);
-            lblrnd2.setVisible(true);
-        }
     }
 }

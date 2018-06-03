@@ -61,7 +61,7 @@ public class warningredminus implements ActionListener {
 
         String[] str5 = new String[5];
         str5[0] = "Referee";
-        str5[1] = round.getText();
+        str5[1] = roundt.getText();
         str5[2] = lbltimer.getText();
         str5[3] = " Warning Red,Removed";
         str5[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();

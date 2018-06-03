@@ -51,7 +51,7 @@ public class penaltyred implements ActionListener {
 
         String[] str7 = new String[5];
         str7[0] = "Referee";
-        str7[1] = round.getText();
+        str7[1] = roundt.getText();
         str7[2] = lbltimer.getText();
         str7[3] = " Penalty(-1 point) Red";
         str7[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();

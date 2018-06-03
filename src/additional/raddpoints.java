@@ -1,26 +1,27 @@
+
 package additional;
 
 
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+        import java.awt.event.ActionEvent;
+        import java.awt.event.ActionListener;
 
-import static main.adminscreen.*;
-import static main.mainform.btm;
-import static main.mainscreen.*;
+        import static main.adminscreen.*;
+        import static main.mainform.btm;
+        import static main.mainscreen.*;
 
 
-public class penaltyminusred implements ActionListener {
+public class raddpoints implements ActionListener {
 
 
     public void actionPerformed(ActionEvent e) {
 
-        rpen--;
-        rpenal = rpen;
+        raddpoint++;
 
-        if (rpen < 0) {
-            rpen = 0;
-        } else {
+//
+//        if (raddpoint < 0) {
+//            raddpoint = 0;
+//        } else {
             amount++;
             amountt++;
             amount2++;
@@ -44,18 +45,18 @@ public class penaltyminusred implements ActionListener {
             rs44t.setText(String.valueOf(amount4t));
             labelcolor2 a = new labelcolor2();
             a.colorL(ar,ar2,ar3,ar4);
-            rpenalty11.setText(String.valueOf(rpen));
-            rpenalty.setText(String.valueOf(rpen));
+            rs5.setText(String.valueOf(raddpoint));
+            //rpenalty.setText(String.valueOf(rpen));
 
 
             String[] str6 = new String[5];
             str6[0] = "Referee";
             str6[1] = roundt.getText();
             str6[2] = lbltimer.getText();
-            str6[3] = " Penalty Red,Removed";
+            str6[3] = "  Red,1 point Added";
             str6[4] = rcompetitor.getText() + " " + rtotal.getText() + ":" + btotal.getText() + " " + bcompetitor.getText();
             btm.addDate(str6);
             btm.fireTableDataChanged();
-        }
+       // }
     }
 }

@@ -60,7 +60,7 @@ public class waringblue implements ActionListener {
 
         String[] str3 = new String[5];
         str3[0] = "Referee";
-        str3[1] = round.getText();
+        str3[1] = roundt.getText();
         str3[2] = lbltimer.getText();
         str3[3] = " Warning Blue";
         str3[4] = rcompetitor.getText()+" " +rtotal.getText()+":" + btotal.getText()+" "+ bcompetitor.getText();
