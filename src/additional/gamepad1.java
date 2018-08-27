@@ -54,7 +54,8 @@ public class gamepad1 {
 
 
             }
-            if (controller1.isButtonPressed(1)) {
+
+             if (controller1.isButtonPressed(1)) {
                 amountb++;
                 amountbt++;
 
@@ -81,7 +82,7 @@ public class gamepad1 {
             }
 
 
-            if (controller1.isButtonPressed(4)) {
+           else if (controller1.isButtonPressed(4)) {
                 amount--;
 
                 ar=amountt;
@@ -103,7 +104,7 @@ public class gamepad1 {
                 btm.fireTableDataChanged();
 
             }
-            if (controller1.isButtonPressed(5)) {
+             if (controller1.isButtonPressed(5)) {
                 amountb--;
 
                 ab=amountbt;
@@ -127,6 +128,7 @@ public class gamepad1 {
             }
 
         }
+
     }
 
 }

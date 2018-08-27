@@ -14,7 +14,9 @@ import org.lwjgl.input.Controllers;
 
 import javax.swing.*;
 import java.awt.*;
-    /**
+import java.util.ArrayList;
+
+/**
      * Created by Andrew on 15.02.2017.
      */
 
@@ -75,12 +77,29 @@ import java.awt.*;
             {
                 e. printStackTrace();
             }
+            String a = "USB Gamepad ";
+            ArrayList<Integer> gp = new ArrayList<>();
             Controllers.poll();
+            for (int i = 0;i<Controllers.getControllerCount();i++){
+                Controllers.getController(i).getName();
+                if (Controllers.getController(i).getName().equals(a)){
+                    System.out.println("pljus");
+                    gp.add(i);
+                }
+              System.out.println(Controllers.getController(i).getName());
+            }
 
-            controller1= Controllers.getController(0);
-        controller2= Controllers.getController(1);
-        controller3= Controllers.getController(2);
-       controller4= Controllers.getController(3);
+int a1 = gp.get(0);
+int a2 = gp.get(1);
+int a3 = gp.get(2);
+int a4 = gp.get(3);
+
+            System.out.println(a1+" "+a2+" "+a3+" "+a4);
+
+            controller1= Controllers.getController(a1);
+        controller2= Controllers.getController(a2);
+        controller3= Controllers.getController(a3);
+       controller4= Controllers.getController(a4);
 
 
             while (true) {
