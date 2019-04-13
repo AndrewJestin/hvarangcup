@@ -9,10 +9,10 @@ import static main.mainscreen.btotal;
 public class labelcolor {
 
 
-    public void colorL(int ab, int ab2,int ab3,int ab4) {
+    public void colorL(int ab, int ab2,int ab3) {
 
 
-bglobal = (ab+ab2+ab3+ab4)/4;
+bglobal = (ab+ab2+ab3)/3;
 System.out.println(bglobal);
         btotal.setText(String.valueOf(bglobal));
         btotal1.setText(String.valueOf(bglobal));

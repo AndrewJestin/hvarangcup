@@ -32,7 +32,7 @@ public class gamepad2 {
                 rs22.setText(String.valueOf(amount2));
 
                 labelcolor2 a = new labelcolor2();
-                a.colorL(ar,ar2,ar3,ar4);
+                a.colorL(ar,ar2,ar3);
 
                 String[]str14 =new String[5];
                 str14[0] = lblUmpire2.getText();
@@ -55,7 +55,7 @@ public class gamepad2 {
                 bs22.setText(String.valueOf(amountb2));
 
                 labelcolor a = new labelcolor();
-                a.colorL(ab,ab2,ab3,ab4);
+                a.colorL(ab,ab2,ab3);
                 String[]str11 =new String[5];
                 str11[0] = lblUmpire2.getText();;
                 str11[1] = roundt.getText();
@@ -79,7 +79,7 @@ public class gamepad2 {
                 rs22t.setText(String.valueOf(amount2t));
                 rs22.setText(String.valueOf(amount2));
                 labelcolor2 a = new labelcolor2();
-                a.colorL(ar,ar2,ar3,ar4);
+                a.colorL(ar,ar2,ar3);
 
                 String[]str22 =new String[5];
                 str22[0] = lblUmpire2.getText();
@@ -101,7 +101,7 @@ public class gamepad2 {
                 bs22t.setText(String.valueOf(amountb2t));
                 bs22.setText(String.valueOf(amountb2));
                 labelcolor a = new labelcolor();
-                a.colorL(ab,ab2,ab3,ab4);
+                a.colorL(ab,ab2,ab3);
                 String[]str21 =new String[5];
                 str21[0] = lblUmpire2.getText();
                 str21[1] = roundt.getText();

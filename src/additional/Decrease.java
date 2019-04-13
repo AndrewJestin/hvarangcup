@@ -23,7 +23,7 @@ amountb=0;
         rs11.setText(String.valueOf(amount));
 
         labelcolor a = new labelcolor();
-        a.colorL(ab,ab2,ab3,ab4);
+        a.colorL(ab,ab2,ab3);
 
 
     }

@@ -131,18 +131,7 @@ public class ekran1 implements ActionListener {
 
             // судья 4
 
-            rs4.setLocation(1710, 830);
-            rs4.setSize(200, 100);
 
-            rs4.setFont(new Font("Arial", Font.BOLD, 90));
-            rs4.setOpaque(true);
-
-
-            bs4.setLocation(1710, 950);
-            bs4.setSize(200, 100);
-
-            bs4.setFont(new Font("Arial", Font.BOLD, 90));
-            bs4.setOpaque(true);
 
 
             //участники 1 и 2
@@ -283,15 +272,6 @@ public class ekran1 implements ActionListener {
 
             // судья 4
 
-            rs4.setLocation(1120, 565);
-            rs4.setSize(150, 60);
-            rs4.setFont(new Font("Arial",Font.BOLD,60));
-            rs4.setOpaque(true);
-
-            bs4.setLocation(1120, 630);
-            bs4.setSize(150, 60);
-            bs4.setFont(new Font("Arial",Font.BOLD,60));
-            bs4.setOpaque(true);
 
 
 

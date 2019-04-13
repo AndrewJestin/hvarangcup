@@ -28,8 +28,7 @@ import static main.adminscreen.*;
         public static JLabel bs2 = new JLabel("0");
         public static JLabel rs3 = new JLabel("0");
         public static JLabel bs3 = new JLabel("0");
-        public static JLabel rs4 = new JLabel("0");
-        public static JLabel bs4 = new JLabel("0");
+
         public static JLabel rcompetitor = new JLabel("Red");
         public static JLabel bcompetitor = new JLabel("Blue");
         public static JLabel btotal = new JLabel("0");
@@ -189,28 +188,6 @@ rs1.setVisible(false);
             totalGUI.add(bs3);
             // судья 4
 
-            rs4.setLocation(1120, 565);
-            rs4.setSize(150, 60);
-            rs4.setHorizontalAlignment(0);
-            rs4.setForeground(Color.white);
-            rs4.setBackground(Color.red);
-            rs4.setFont(new Font("Arial",Font.BOLD,60));
-            rs4.setOpaque(true);
-            rs4.setVisible(false);
-
-
-            totalGUI.add(rs4);
-
-            bs4.setLocation(1120, 630);
-            bs4.setSize(150, 60);
-            bs4.setHorizontalAlignment(0);
-            bs4.setForeground(Color.white);
-            bs4.setBackground(Color.blue);
-            bs4.setFont(new Font("Arial",Font.BOLD,60));
-            bs4.setOpaque(true);
-            bs4.setVisible(false);
-
-            totalGUI.add(bs4);
 
 
             //участники 1 и 2

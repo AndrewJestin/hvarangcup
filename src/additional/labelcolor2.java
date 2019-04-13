@@ -9,10 +9,10 @@ import static main.mainscreen.rtotal;
 public class labelcolor2 {
 
 
-    public void colorL(int ar, int ar2,int ar3,int ar4) {
+    public void colorL(int ar, int ar2,int ar3) {
 
 
-        rglobal = (ar+ar2+ar3+ar4)/4;
+        rglobal = (ar+ar2+ar3)/3;
         System.out.println(rglobal);
         rtotal.setText(String.valueOf(rglobal));
         rtotal1.setText(String.valueOf(rglobal));

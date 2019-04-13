@@ -40,14 +40,10 @@ public class nextmatch implements ActionListener {
         bs33.setText(String.valueOf(amountb3));
         rs3.setText(String.valueOf(amount3));
         bs3.setText(String.valueOf(amountb3));
-        amount4=0;
-        amountb4=0;
+
 //        ar4=amount4;
 //        ab4=amountb4;
-        rs44.setText(String.valueOf(amount4));
-        bs44.setText(String.valueOf(amountb4));
-        rs4.setText(String.valueOf(amount4));
-        bs4.setText(String.valueOf(amountb4));
+
        // rwarning=0;
       //  bwarning=0;
         wr=rwarning;

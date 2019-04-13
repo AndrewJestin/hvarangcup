@@ -31,7 +31,7 @@ public class gamepad3 {
                 rs33.setText(String.valueOf(amount3));
 
                 labelcolor2 a = new labelcolor2();
-                a.colorL(ar,ar2,ar3,ar4);
+                a.colorL(ar,ar2,ar3);
                 String[]str15 =new String[5];
                 str15[0] = lblUmpire3.getText();
                 str15[1] = roundt.getText();
@@ -54,7 +54,7 @@ public class gamepad3 {
                 bs33.setText(String.valueOf(amountb3));
 
                 labelcolor a = new labelcolor();
-                a.colorL(ab,ab2,ab3,ab4);
+                a.colorL(ab,ab2,ab3);
                 String[]str12 =new String[5];
                 str12[0] = lblUmpire3.getText();
                 str12[1] = roundt.getText();
@@ -78,7 +78,7 @@ public class gamepad3 {
                 rs33t.setText(String.valueOf(amount3t));
                 rs33.setText(String.valueOf(amount3));
                 labelcolor2 a = new labelcolor2();
-                a.colorL(ar,ar2,ar3,ar4);
+                a.colorL(ar,ar2,ar3);
                 String[]str20 =new String[5];
                 str20[0] = lblUmpire3.getText();
                 str20[1] = roundt.getText();
@@ -99,7 +99,7 @@ public class gamepad3 {
                 bs33t.setText(String.valueOf(amountb3t));
                 bs33.setText(String.valueOf(amountb3));
                 labelcolor a = new labelcolor();
-                a.colorL(ab,ab2,ab3,ab4);
+                a.colorL(ab,ab2,ab3);
                 String[]str19 =new String[5];
                 str19[0] = lblUmpire3.getText();
                 str19[1] = roundt.getText();

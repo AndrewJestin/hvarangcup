@@ -98,15 +98,7 @@ public class themecolor implements ActionListener {
             // судья 4
 
 
-            rs4.setForeground(Color.white);
-            rs4.setBackground(Color.red);
 
-            rs4.setOpaque(true);
-
-
-            bs4.setForeground(Color.white);
-            bs4.setBackground(Color.blue);
-            bs4.setOpaque(true);
 
 
             //участники 1 и 2
@@ -264,15 +256,6 @@ public class themecolor implements ActionListener {
             // судья 4
 
 
-            rs4.setForeground(Color.white);
-            rs4.setBackground(Color.red);
-            rs4.setOpaque(true);
-
-
-
-            bs4.setForeground(Color.white);
-            bs4.setBackground(Color.blue);
-            bs4.setOpaque(true);
 
 
             //участники 1 и 2

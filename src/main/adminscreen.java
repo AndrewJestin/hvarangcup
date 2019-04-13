@@ -29,7 +29,7 @@ import static main.mainscreen.*;
         public static JTextField lblUmpire1 = new JTextField("Umpire 1");
         public static JTextField lblUmpire2= new JTextField("Umpire 2");
         public static JTextField lblUmpire3 = new JTextField("Umpire 3");
-        public static JTextField lblUmpire4 = new JTextField("Umpire 4");
+      //  public static JTextField lblUmpire4 = new JTextField("Umpire 4");
         public static JLabel category = new JLabel("TOTAL:");
         public static int brk = 0;
         public static int tmaxround = 1;  // количество раундов в  поединке
@@ -66,12 +66,12 @@ import static main.mainscreen.*;
         public static int amountb3t = 0;
         public static int ar3;
         public static int ab3;
-        public static int amount4 = 0;
-        public static int amount4t = 0;
-        public static int amountb4 = 0;
-        public static int amountb4t = 0;
-        public static int ar4;
-        public static int ab4;
+       // public static int amount4 = 0;
+       // public static int amount4t = 0;
+      //  public static int amountb4 = 0;
+      //  public static int amountb4t = 0;
+      //  public static int ar4;
+       // public static int ab4;
         public static int rndnum = 1;
         public static int startstop = 2;
         public static int brktime=0;
@@ -106,8 +106,8 @@ import static main.mainscreen.*;
         public static JLabel bs22t = new JLabel("0");
         public static JLabel rs33t = new JLabel("0");
         public static JLabel bs33t = new JLabel("0");
-        public static JLabel rs44t = new JLabel("0");
-        public static JLabel bs44t = new JLabel("0");
+       // public static JLabel rs44t = new JLabel("0");
+       // public static JLabel bs44t = new JLabel("0");
         public static JLabel bs5 = new JLabel("0");
         public static JLabel rs5 = new JLabel("0");
         public static int raddpoint = 0;
@@ -241,13 +241,7 @@ import static main.mainscreen.*;
             lblUmpire3.setOpaque(true);
             totalGUI.add(lblUmpire3);
 
-            lblUmpire4.setLocation(950, 600);
-            lblUmpire4.setSize(145, 30);
-            lblUmpire4.setHorizontalAlignment(0);
-            lblUmpire4.setForeground(Color.black);
-            lblUmpire4.setFont(new Font("Arial", Font.BOLD, 15));
-            lblUmpire4.setOpaque(true);
-            totalGUI.add(lblUmpire4);
+
 
 
 
@@ -783,26 +777,7 @@ import static main.mainscreen.*;
             totalGUI.add(bs33);
             // судья 4
 
-            rs44.setLocation(950, 630);
-            rs44.setSize(150, 50);
-            rs44.setHorizontalAlignment(0);
-            rs44.setForeground(Color.white);
-            rs44.setBackground(Color.red);
-            rs44.setFont(new Font("Arial", Font.BOLD, 45));
-            rs44.setOpaque(true);
 
-
-            totalGUI.add(rs44);
-
-            bs44.setLocation(950, 690);
-            bs44.setSize(150, 50);
-            bs44.setHorizontalAlignment(0);
-            bs44.setForeground(Color.white);
-            bs44.setBackground(Color.blue);
-            bs44.setFont(new Font("Arial", Font.BOLD, 45));
-            bs44.setOpaque(true);
-
-            totalGUI.add(bs44);
 
             rs5.setLocation(350, 501);
             rs5.setSize(50, 50);
@@ -935,24 +910,6 @@ import static main.mainscreen.*;
             totalGUI.add(bs33t);
             // судья 4
 
-            rs44t.setLocation(700, 50);
-            rs44t.setSize(150, 50);
-            rs44t.setHorizontalAlignment(0);
-            rs44t.setForeground(Color.white);
-            rs44t.setBackground(Color.red);
-            rs44t.setFont(new Font("Arial", Font.BOLD, 45));
-            rs44t.setOpaque(true);
-            totalGUI.add(rs44t);
-
-            bs44t.setLocation(700, 105);
-            bs44t.setSize(150, 50);
-            bs44t.setHorizontalAlignment(0);
-            bs44t.setForeground(Color.white);
-            bs44t.setBackground(Color.blue);
-            bs44t.setFont(new Font("Arial", Font.BOLD, 45));
-            bs44t.setOpaque(true);
-
-            totalGUI.add(bs44t);
 
 
             return totalGUI;

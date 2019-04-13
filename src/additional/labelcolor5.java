@@ -75,30 +75,7 @@ public class labelcolor5 {
 
 
         }
-        if (ab4 < ar4){
-            rglobal4=1;
-            bglobal4=0;
-//            rtotal1.setText(String.valueOf(rglobal));
-//            btotal1.setText(String.valueOf(bglobal));
-//            rtotal.setText(String.valueOf(rglobal));
-//            btotal.setText(String.valueOf(bglobal));
-            //   System.out.println(bglobal2);
-        }
-        if (ab4 > ar4){
-            bglobal4=1;
-            rglobal4=0;
 
-//            rtotal1.setText(String.valueOf(rglobal));
-//            btotal1.setText(String.valueOf(bglobal));
-//            rtotal.setText(String.valueOf(rglobal));
-//            btotal.setText(String.valueOf(bglobal));
-        }
-        if (ab4 == ar4){
-            bglobal4=0;
-            rglobal4=0;
-
-
-        }
 
         if (bglobal1+bglobal2+bglobal3+bglobal4 == 0) {
             bglobal = 0;

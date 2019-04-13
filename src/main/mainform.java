@@ -8,7 +8,6 @@ package main;
 import additional.gamepad1;
 import additional.gamepad2;
 import additional.gamepad3;
-import additional.gamepad4;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Controllers;
 
@@ -77,29 +76,43 @@ import java.util.ArrayList;
             {
                 e. printStackTrace();
             }
-            String a = "USB Gamepad ";
+            String a = "usb gamepad";
+            String b = "usb gamepad           ";
+            String c;
             ArrayList<Integer> gp = new ArrayList<>();
             Controllers.poll();
+
             for (int i = 0;i<Controllers.getControllerCount();i++){
                 Controllers.getController(i).getName();
-                if (Controllers.getController(i).getName().equals(a)){
+                c = Controllers.getController(i).getName().toLowerCase().trim();
+              //  c.toLowerCase();
+              //  c.trim();
+                if (c.equals(a)){
                     System.out.println("pljus");
                     gp.add(i);
+
                 }
-              System.out.println(Controllers.getController(i).getName());
+//                if (Controllers.getController(i).getName().equals(a)|| Controllers.getController(i).getName().equals(b)){
+//                    System.out.println("pljus");
+//                    gp.add(i);
+//
+//                }
+            //  gp.add(i);
+              System.out.println(c);
+              System.out.println(Controllers.getController(i).getIndex());
             }
 
 int a1 = gp.get(0);
 int a2 = gp.get(1);
 int a3 = gp.get(2);
-int a4 = gp.get(3);
 
-            System.out.println(a1+" "+a2+" "+a3+" "+a4);
+
+            System.out.println(a1+" "+a2+" "+a3);
 
             controller1= Controllers.getController(a1);
         controller2= Controllers.getController(a2);
         controller3= Controllers.getController(a3);
-       controller4= Controllers.getController(a4);
+
 
 
             while (true) {
@@ -112,7 +125,7 @@ int a4 = gp.get(3);
                 gamepad1 ng1 = new gamepad1();
                 gamepad2 ng2 = new gamepad2();
                 gamepad3 ng3 = new gamepad3();
-                gamepad4 ng4 = new gamepad4();
+
 
 
 
